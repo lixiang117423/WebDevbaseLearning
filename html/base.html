@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <!--这是网页的标题-->
+    <title>一二布布在熊村</title>
+  </head>
+
+  <body>
+    <!-- 这是网页的一级标题 -->
+    <h1>布布的不二呆大军，作者是一二和布布</h1>
+    <p>
+      只要是双标签就可以嵌入子元素！
+      <br>
+      不二呆是布布的好兄弟！
+      <br />
+      <br />
+      <!-- 加粗 -->
+      <b>一二是不二呆的大哥！</b>
+      <br />
+      <!-- 斜体 -->
+      <i>一二是不二呆的大哥！</i>
+    </p>
+
+    <p>
+      <b>不二呆</b>是<i>一二的<del>小弟！</del></i>
+    </p>
+    <!-- 不同的标题之间是默认换行输出的 -->
+    <h1>这是网页的一级标题</h1>
+    <h2>这是网页的二级标题</h2>
+    <h3>这是网页的三级标题</h3>
+    <h4>这是网页的四级标题</h4>
+    <h5>这是网页的五级标题</h5>
+    <h6>这是网页的六级标题</h6>
+
+    <!-- 超链接和元素属性 -->
+    <h1>超链接和元素属性</h1>
+    <p>href="xxx"表示指向xxx这个地址，如下面这个：</p>
+    <a href="https://www.web4xiang.top/blog/" target="_blank"
+      >点击访问小蓝哥的知识荒原！</a
+    >
+    <p>
+      target表示新页面打开还是本页直接打开！_blank表示新页面打开，其他的都是当前页面打开！默认是_self表示当前页面打开。
+    </p>
+
+    <!-- 块元素和行元素 -->
+    常见的块元素是div，行内元素类是span.
+    <h2>块元素div</h2>
+    <a href="https://www.web4xiang.top/blog/" target="_blank"
+      >点击访问小蓝哥的知识荒原！</a
+    >
+    <a href="https://www.web4xiang.top/blog/" target="_blank"
+      >点击访问小蓝哥的知识荒原！</a
+    >
+    <a href="https://www.web4xiang.top/blog/" target="_blank"
+      >点击访问小蓝哥的知识荒原！</a
+    >
+    <p>使用div以后可以换行<span>!哈哈哈</span></p>
+    <div>
+      <a href="https://www.web4xiang.top/blog/" target="_blank"
+        >点击访问小蓝哥的知识荒原！</a
+      >
+    </div>
+    <div>
+      <a href="https://www.web4xiang.top/blog/" target="_blank"
+        >点击访问小蓝哥的知识荒原！</a
+      >
+    </div>
+    <div>
+      <a href="https://www.web4xiang.top/blog/" target="_blank"
+        >点击访问小蓝哥的知识荒原！</a
+      >
+    </div>
+
+    <h2>图像元素</h2>
+    <p>需要注意图片文件的相对路径！</p>
+    <p>width和height表示图像的宽度和高度，单位是像素。</p>
+    <p>alt属性表示图像没有显示的时候所展示的信息。</p>
+    <p>title表示图片的标题，鼠标移动到图片上时或展示这个title。</p>
+    <img
+      src="./images/10.png"
+      alt="图片不存在"
+      width="400"
+      height="300"
+      title="我是个图片"
+    />
+    <br />
+    <img
+      src="./images/1.png"
+      alt="图片不存在"
+      width="400"
+      height="300"
+      title="我是个测试图片"
+    />
+    <br />
+    <img
+      src="https://s3.51cto.com/oss/202301/11/25c72c690dc5dd90782891b12f1c8656913787.jpg"
+      alt=""
+    />
+    为什么这个网络上的图无法显示呢！
+
+    <h2>列表</h2>
+    其中ol表示的是有序列表，ul表示的是无序列表。
+    <ol>
+      <li>这是1</li>
+      <li>这是2</li>
+    </ol>
+    <p>无序列表</p>
+    <ul>
+      <li>这是1</li>
+      <li>这是2</li>
+    </ul>
+
+    <h2>表格</h2>
+    <table frame="box" rules="all">
+      <tr>
+        <th>标签</th>
+        <th>功能</th>
+        <th>分类</th>
+      </tr>
+      <tr>
+        <td>table</td>
+        <td>最外层标签</td>
+        <td>闭合标签</td>
+      </tr>
+      <tr>
+        <td>tre</td>
+        <td>创建行</td>
+        <td>闭合标签</td>
+      </tr>
+      <tr>
+        <td>th</td>
+        <td>创建表头</td>
+        <td>闭合标签</td>
+      </tr>
+      <tr>
+        <td>td</td>
+        <td>创建表内容</td>
+        <td>闭合标签</td>
+      </tr>
+    </table>
+
+    <h2>文本输入框input</h2>
+    <p>登录网站的用户和密码就是通过这个功能实现的。</p>
+    <span>请输入用户名称：</span><input type="text" name="username" id="" />
+    <br />
+    <span>请输入用户密码：</span
+    ><input type="password" name="userpassword" id="" />
+    <br />
+    <input type="submit" name="点击提交" id="" width="1000" value="点击提交" />
+    <br />
+    <span>请上传文件：</span><input type="file" />
+
+    <h2>标签元素label</h2>
+    <p>单击文字都可以勾选</p>
+    <input type="checkbox" name="" id="password" />
+    <label for="password">请记住密码</label>
+    <br />
+    <input type="checkbox" name="" id="ensure" />
+    <label for="ensure">我已经阅读并同意上述条款</label>
+
+    <h2>下拉列表select</h2>
+    <p>默认显示第一个选项</p>
+    <select name="用户选项" id="select_id">
+      <option value="" selected="selected">下拉选择</option>
+      <option value="">DNA</option>
+      <option value="">Protein</option>
+      <option value="">mRNA</option>
+      <option value="">lncRNA</option>
+    </select>
+    <input type="submit" value="确认提交" />
+    <!-- <label for="select_id">用户选项</label> -->
+
+    <h2>多行文本输入框textarea</h2>
+    <div>
+      <p>请在下方输入框输入你的序列：</p>
+      <textarea name="哈哈" id="" cols="50" rows="10"></textarea>
+      <br />
+      <input type="submit" name="" id="" value="确认提交序列" />
+      <input type="file" name="" id="" value="选择序列文件" />
+    </div>
+
+    <h2>按钮元素</h2>
+    可以代替input。
+    <br>
+    <button>确认提交</button>
+    <br>
+    <br>
+    <button>取消提交</button>
+    <br>
+    <br>
+    <button>
+      确认提交<img src="./images/1.png" alt="", width="20", height="20">
+    </button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
