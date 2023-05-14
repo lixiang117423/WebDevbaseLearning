@@ -1,0 +1,59 @@
+/* 元素属性 */
+div {
+    background-color: cadetblue;
+    color: white;
+    font-size: 25px;
+}
+
+/* id属性 */
+#tiantian {
+    font-size: 66px;
+    color: blueviolet;
+}
+
+/* 类属性 */
+.testclass2 {
+    font-size: 20px;
+    color: darkgreen;
+    background-color: brown;
+}
+
+/* 伪类选择器 */
+/* 超链接变色 */
+a {
+    color: blue;
+}
+a:hover {
+    color: red;
+}
+
+/* 表格奇数行背景色灰色 */
+table tr:nth-child(2n+1) {
+    background-color: grey;
+    color: white;
+}
+
+/* 表格偶数行字体黑色 */
+table tr:nth-child(2n) {
+    color: black;
+}
+
+.div1 {
+    border-width: 5px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-bottom-color: red;
+    background-color: aquamarine;
+    color: black;
+    width: 200px;
+    height: 500px;
+}
+
+#box {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    /* 行内块元素 */
+    display: inline-block;
+}

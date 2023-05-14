@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    +
+    <!-- 导入外部css文件 -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./base.css"> -->
+    <!-- 内部样式表 -->
+    <style type="text/css">
+      /* 所有二级标题的样式 */
+      h2 {
+        background-color: aquamarine;
+        font-size: 30px;
+        color: brown;
+      }
+      /* 所有的p元素对应的形式 */
+      p {
+        background-color: brown;
+        color: white;
+        font-size: 20px;
+      }
+      /* 定义表格的形式 */
+      /* 表的线条颜色 */
+      table {
+        border-color: tomato;
+        border-width: 3px;
+      }
+      /* 表头颜色 */
+      th {
+        background-color: cadetblue;
+        font-size: 25px;
+        color: brown;
+        width: 100px;
+        height: 30px;
+      }
+      /* 每一行的颜色 */
+      td {
+        /* background-color: black; */
+        font-size: 20px;
+        /* color: white; */
+        height: 20px;
+        text-align: center;
+      }
+      /* 根据id选择渲染器 */
+      #tiantian {
+        font-size: 66px;
+        color: blueviolet;
+      }
+      /* 根据类选择渲染器 */
+      .testclass {
+        color: crimson;
+        font-size: 50px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div>div测试文字！</div>
+    <p>p测试文字</p>
+    <br />
+    <h2>这是一个测试表格</h2>
+    <table frame="box" rules="all">
+      <!-- 表头 -->
+      <tr>
+        <th>Boy</th>
+        <th>Girl</th>
+        <th>Village</th>
+      </tr>
+      <!-- 表内容 -->
+      <tr>
+        <td>布布</td>
+        <td>一二</td>
+        <td>熊熊村</td>
+      </tr>
+      <tr>
+        <td>灰灰</td>
+        <td>蜜桃</td>
+        <td>熊熊村</td>
+      </tr>
+      <tr>
+        <td id="tiantian">田田</td>
+        <td>甜甜</td>
+        <td>熊熊村</td>
+      </tr>
+      <tr>
+        <td style="color: blueviolet">详详</td>
+        <td style="color: brown">敏敏</td>
+        <td style="color: cadetblue">熊熊村</td>
+      </tr>
+    </table>
+
+    <h2>CSS的id选择器</h2>
+    <p>html中每个元素都可以设置唯一的id，因此可以根据id选择渲染器</p>
+
+    <h2>CSS的类选择器</h2>
+    <p>
+      html中每个元素都可以设置class，因此可以根据class选择渲染器。不同的类名用空格隔开。
+    </p>
+    <span class="testclass">这是类的测试！</span>
+    <br />
+    <span class="testclass2">这是引用外部css文件的示例。</span>
+
+    <h2>伪类选择器</h2>
+    <p>鼠标移动到超链接后变成蓝色！</p>
+    <a href="https://www.web4xiang.top/blog/" target="_blank"
+      >点击访问布布的博客！</a
+    >
+
+    <h2>添加背景图片</h2>
+    <div
+      style="
+        background-image: url('https://new.ynau.edu.cn/__local/3/41/E7/B7F28F8B4EB33529B2E292A07ED_A7892B5A_7BFC2.jpg');
+        background-repeat: no-repeat;
+        height: 150px;
+      "
+    >
+      Home Browse Blast Downlaod Contact Help
+      <input type="text" value="搜索框" />
+      <button>开始检索</button>
+    </div>
+    <h2>列表属性</h2>
+    <ul style="list-style-type: circle">
+      <li>列表1</li>
+      <li>列表2</li>
+      <li>列表3</li>
+      <li>列表4</li>
+      <li>列表5</li>
+    </ul>
+    <h2>下拉列表属性</h2>
+    <select name="" id="">
+      <option value="">请选择输入数据类型</option>
+      <option value="">DNA</option>
+      <option value="">RNA</option>
+      <!-- 默认选项设置 -->
+      <option value="" selected="selected">Protein</option>
+    </select>
+    <h2>边框属性</h2>
+    <div class="div1">div边框测试</div>
+    <h2>内边距padding</h2>
+    <p>将外边框理解成一个盒子，那么内边距就是纸盒盖子的厚度，只有在厚度之下的空间才可以存放东西。</p>
+    <div class="div1" id="box">
+      <div style="background-color: blueviolet">测试文字</div>
+    </div>
+    <div class="div1" id="box" style="color: brown;">测试文字2</div>
+    <h2>CSS属性的优先级问题</h2>
+    <p>行内样式表 > 内部样式表 > 外部样式表</p>
+    <p>谁的选择范围小谁的优先级越高！</p>
+
+    <h2>鼠标样式属性</h2>
+    <p>鼠标移动到这里显示一个小手。</p>
+    <button style="cursor: pointer;">确认提交</button>
+
+
+    
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
